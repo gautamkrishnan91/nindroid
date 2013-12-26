@@ -8,6 +8,10 @@ body{
 	background: radial-gradient(ellipse at center,  #f8ffe8 0%,#d6ddba 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#d6ddba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+a,a:visited,a:active,a:focus{
+	text-decoration: none;
+	color: green;
+}
 .ninja-wrapper{
 	position: absolute;
 	height: 480px;
@@ -332,4 +336,16 @@ body{
 	height: 0;
 	border: 14px solid transparent;
 	border-top: 30px solid #000;
+}
+.topbar{
+	position: fixed;
+	width: 100%;
+	background: #000;
+	top: 0;
+	color: #ddd;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 13px;
 }
