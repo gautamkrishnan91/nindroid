@@ -1,17 +1,24 @@
 body{
-	/*background: #1ad611;
-	background: -moz-radial-gradient(center, ellipse cover,  #1ad611 0%, #299a0b 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1ad611), color-stop(100%,#299a0b));
-	background: -webkit-radial-gradient(center, ellipse cover,  #1ad611 0%,#299a0b 100%);
-	background: -o-radial-gradient(center, ellipse cover,  #1ad611 0%,#299a0b 100%);
-	background: -ms-radial-gradient(center, ellipse cover,  #1ad611 0%,#299a0b 100%);
-	background: radial-gradient(ellipse at center,  #1ad611 0%,#299a0b 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ad611', endColorstr='#299a0b',GradientType=1 );*/
+	background: #f8ffe8; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f8ffe8 0%, #d6ddba 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f8ffe8), color-stop(100%,#d6ddba)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f8ffe8 0%,#d6ddba 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f8ffe8 0%,#d6ddba 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f8ffe8 0%,#d6ddba 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f8ffe8 0%,#d6ddba 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#d6ddba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.ninja-wrapper{
+	position: absolute;
+	height: 480px;
+	top: 50%;
+	margin-top: -240px;
+	width: 100%;
 }
 .ninja-container{
 	width: 380px;
 	margin: 0 auto;
-	height: 500px;
+	position: relative;
 }
 .ninja-head{
 	background-color: #80bd01;
@@ -242,10 +249,10 @@ body{
 }
 .shuriken-outer{
 	position: absolute;
-	margin: 75px 0 0 20px;
-	transform:rotate(55deg);
-	-ms-transform:rotate(55deg);
-	-webkit-transform:rotate(55deg);
+	margin: 75px 0 0 25px;
+	transform:rotate(65deg);
+	-ms-transform:rotate(65deg);
+	-webkit-transform:rotate(65deg);
 }
 .shuriken-hole{
 	width: 12px;
@@ -259,9 +266,6 @@ body{
 	border-style: solid;
 	border-width: 0 10px 22.5px 10px;
 	border-color: transparent transparent #000 transparent;
-	border-radius: 50% / 20%;
-	-moz-border-radius: 50% / 20%;
-	-webkit-border-radius: 50% / 20%;
 	position: absolute;
 }
 .shuriken-arm.arm1{
@@ -284,4 +288,48 @@ body{
 	-ms-transform:rotate(180deg);
 	-webkit-transform:rotate(180deg);
 	margin: 42px 0 0 21px;
+}
+.kunai-outer{
+	margin: 66px 0 0 74px;
+	position: absolute;
+}
+.kunai-circle{
+	background: transparent;
+	width: 10px;
+	height: 10px;
+	border: 3px solid #000;
+	border-radius: 50%;
+	position: absolute;
+	margin: -1px 0 0 30px;
+}
+.kunai-arm{
+	width: 7px;
+	height: 26px;
+	background: #000;
+	position: absolute;
+	transform:rotate(30deg);
+	-ms-transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+	margin: 10px 0 0 25px;
+}
+.kunai-blade{
+	width: 0;
+	height: 0;
+	border: 14px solid transparent;
+	border-bottom: 20px solid #000;
+	position: absolute;
+	top: -50px;
+	transform:rotate(30deg);
+	-ms-transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+	margin: 60px 0 0 12px;
+}
+.kunai-blade:after{
+	content: '';
+	position: absolute;
+	left: -14px; top: 20px;
+	width: 0;
+	height: 0;
+	border: 14px solid transparent;
+	border-top: 30px solid #000;
 }
